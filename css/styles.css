@@ -1,0 +1,63 @@
+body {
+  background-color: #833ab4;
+  animation: color 30s infinite;
+}
+
+@keyframes color {
+  0% {
+    background-color:#833ab4;
+  }
+  10% {
+    background-color: #fd1d1d;
+  }
+  20% {
+    background-color: #fcb045;
+  }
+  30% {
+    background-color: #4BC0C8;
+  }
+  40%: {
+    background-color: #ffffff;
+  }
+  50% {
+    background-color: #f9d423;
+  }
+  60% {
+    background-color: #bb377d;
+  }
+  70% {
+    background-color: #00d2ff;
+  }
+  80% {
+    background-color: #ff9472;
+  }
+  90% {
+    background-color: #fff94c;
+  }
+  100% {
+    background-color: #833ab4;
+  }
+}
+
+#container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 15px;
+}
+
+#hello {
+  font-family: 'Roboto', sans-serif;
+  font-size: 10em;
+  z-index: 1001;
+  position: relative;
+  top: 5%;
+}
+
+#text {
+  font-size: 3em;
+  font-family: 'Roboto', sans-serif;
+  z-index: 1000;
+  position: relative;
+}
