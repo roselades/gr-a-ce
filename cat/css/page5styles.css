@@ -1,0 +1,162 @@
+body {
+  background-color: rgba(0, 0, 0, 0.75);
+  overflow: hidden;
+}
+
+.tooSmall {
+  height: 100vh;
+  width: 100vw;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-color: rgba(0, 0, 0, 0.85);
+  display: none;
+
+  z-index: 10000000000;
+}
+
+#resize {
+    color: white;
+    font-family: courier;
+    font-size: 1.5em;
+    line-height: 40px;
+    text-align: center;
+
+    width: 350px;
+    height: 250px;
+    margin-top: -125px;
+    margin-left: -175px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.frame {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+  z-index: 50;
+
+}
+
+.topframe {
+  background-image: url("../images/topframe.png");
+  background-size: 100% 100px;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.bottomframe {
+  background-image: url("../images/bottomframe.png");
+  background-size: 100% 100px;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.leftrightframe {
+  background-image: url("../images/leftrightframes.png");
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+
+}
+
+.rightButton {
+  background-image: url("../images/paper-03alt.png");
+  background-size: 250px 100px;
+  width: 250px;
+  height: 100px;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 10000;
+}
+
+.restart {
+  display: block;
+  width: 200px;
+  height: 25px;
+  background-color: black;
+
+  position: absolute;
+  bottom: 25px;
+  right: 10px;
+  padding-top: 5px;
+
+
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-family: courier;
+  z-index: 100000;
+}
+
+.restart:hover {
+  background-color: rgb(35, 35, 35);
+}
+
+.catImage {
+  background-image: url("../images/happy cat.png");
+  background-size: 750px 500px ;
+  height: 500px;
+  width: 750px;
+
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  z-index: 20;
+}
+
+.text {
+  height: 190px;
+  width: 680px;
+  background-image: url("../images/paper-02.png");
+  background-size: 720px 200px;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+
+  text-align: center;
+
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  z-index: 10000000;
+}
+
+p {
+  font-family: courier;
+  font-size: 1.1em;
+  padding-left: 15px;
+  padding-right: 15px;
+  line-height: 30px;
+
+}
+
+.floor {
+  width: 100%;
+  height: 5000px;
+  background-color: rgba(0, 0, 0, 0.25);
+
+  position: absolute;
+  top: 55%;
+  z-index: 1;
+
+  border-top: 2px solid black;
+
+}

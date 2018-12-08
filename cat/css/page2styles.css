@@ -1,0 +1,490 @@
+/*PAGE + GENERAL STYLING*/
+
+body {
+  background-color: white;
+  overflow: hidden;
+}
+ /*WOOD FRAME*/
+.frame {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+  z-index: 50;
+
+}
+
+.topframe {
+  background-image: url("../images/topframe.png");
+  background-size: 100% 100px;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.bottomframe {
+  background-image: url("../images/bottomframe.png");
+  background-size: 100% 100px;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.leftrightframe {
+  background-image: url("../images/leftrightframes.png");
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+
+}
+
+/* OVERLAY ON RESIZE */
+.tooSmall {
+  height: 100vh;
+  width: 100vw;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-color: rgba(0, 0, 0, 0.85);
+  display: none;
+
+  z-index: 1000000;
+}
+
+#resize {
+    color: white;
+    font-family: courier;
+    font-size: 1.5em;
+    line-height: 40px;
+    text-align: center;
+
+    width: 350px;
+    height: 250px;
+    margin-top: -125px;
+    margin-left: -175px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+/*OTHER GENERAL STYLING*/
+
+
+p {
+  font-family: courier;
+  font-size: 1.1em;
+  padding-left: 15px;
+  padding-right: 15px;
+  line-height: 25px;
+}
+
+.floor {
+  width: 100%;
+  height: 5000px;
+  background-color: rgba(0, 0, 0, 0.25);
+
+  position: absolute;
+  top: 55%;
+  z-index: 1;
+
+  border-top: 2px solid black;
+
+}
+
+.cat {
+  width: 200px;
+  height: 200px;
+  background-position: right;
+
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  margin-left: -100px;
+  margin-top: -100px;
+
+  z-index: 25;
+
+}
+
+@keyframes walkingLeft {
+
+  0% {background-position: right;}
+  100% {background-position: left;}
+
+}
+
+@keyframes walkingRight {
+
+  0% {background-position: left;}
+  100% {background-position: right;}
+
+}
+
+@keyframes standing {
+
+  0% { background-position: left;}
+
+
+  50% {background-position: right;}
+
+
+  100% { background-position: left;}
+
+}
+
+@keyframes stretching {
+
+  0% { background-position: left;}
+
+
+  50% {background-position: right;}
+
+
+  100% { background-position: left;}
+
+}
+
+
+@keyframes right {
+
+  0% { background-position: left;}
+
+  30% {background-position: left;}
+
+  40% { background-position: right;}
+
+  50% {background-position: right;}
+
+  80% { background-position: left;}
+
+  100% { background-position: left;}
+
+}
+
+.resting{
+  width: 200px;
+  height: 200px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-position: right;
+
+  background-image: url("../images/cat rest spritesheet.png");
+  animation: right 2s steps(7) infinite;
+
+  -webkit-transition: background-image 2s fadeInOut;
+  transition: background-image 2s fadeInOut;
+
+
+}
+
+.walkingLeft {
+  width: 200px;
+  height: 200px;
+
+  display: none;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-position: right;
+
+  background-image: url("../images/cat walking left spritesheet.png");
+  animation: walkingLeft 0.4s steps(4) infinite;
+
+  -webkit-transition: background-image 2s fadeInOut;
+  transition: background-image 2s fadeInOut;
+
+
+}
+
+.walkingRight {
+  width: 200px;
+  height: 200px;
+
+  display: none;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-position: left;
+
+  background-image: url("../images/cat walking right spritesheet.png");
+  animation: walkingRight 0.4s steps(4) infinite;
+
+  -webkit-transition: background-image 2s fadeInOut;
+  transition: background-image 2s fadeInOut;
+
+
+}
+
+.standing {
+  width: 200px;
+  height: 200px;
+
+  display: none;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-position: left;
+
+  background-image: url("../images/cat standing spritesheet.png");
+  animation: standing 0.7s steps(4) infinite;
+
+
+}
+
+.stretching {
+  width: 200px;
+  height: 200px;
+
+  display: none;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-position: left;
+
+  background-image: url("../images/cat stretching spritesheet.png");
+  animation: stretching 0.4s steps(4) infinite;
+
+}
+
+.hearts {
+  width: 200px;
+  height: 200px;
+
+  display: none;
+
+  background-image: url("../images/hearts.png");
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+
+.sad {
+
+  width: 200px;
+  height: 200px;
+
+  display: none;
+
+  background-image: url("../images/sad.png");
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+
+/*HAPPINESS METER STYLING*/
+
+.meterContainer {
+  background-image: url("../images/paper-02alt.png");
+  background-size: 100% 100px;
+  width: 35%;
+  height: 100px;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  z-index: 100000;
+}
+
+.meter {
+  background-color: black;
+  height: 10px;
+  width: 90%;
+
+  position: absolute;
+  bottom: 35px;
+  left: 20px;
+
+  border-radius: 5px;
+}
+
+.marker {
+  background-image: url("../images/white cat marker.png");
+  height: 30px;
+  width: 30px;
+
+  position: absolute;
+  left: 50%;
+  margin-left: -15px;
+  margin-top: -10px;
+}
+
+/*QUESTION CONTAINER STYLING*/
+
+.introBox {
+  background-image: url("../images/paper-02.png");
+  background-size: 520px 160px;
+  width: 500px;
+  height: 120px;
+
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+
+  z-index: 1000;
+
+}
+
+.question1, .question2, .question3, .question41, .question42, .question51, .question52, .question6, .final {
+  width: 700px;
+  height: 110px;
+
+  position: absolute;
+  top: -1500px;
+  left: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  text-align: center;
+
+  z-index: 1000;
+
+}
+
+.rightButton {
+  background-image: url("../images/paper-03alt.png");
+  background-size: 250px 100px;
+  width: 250px;
+  height: 100px;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 10000;
+}
+
+.paper1 {
+  background-image: url("../images/paper1.png");
+  background-size: 720px 160px;
+}
+
+.paper2 {
+  background-image: url("../images/paper-02alt.png");
+  background-size: 720px 160px;
+}
+
+.paper3 {
+  background-image: url("../images/paper-03.png");
+  background-size: 720px 160px;
+}
+
+.options {
+  height: 35px;
+  width: 700px;
+  position: absolute;
+  bottom: 25px;
+  left: 10px;
+}
+
+/*BUTTON STYLING*/
+
+.restart {
+  display: block;
+  width: 200px;
+  height: 25px;
+  background-color: black;
+
+  position: absolute;
+  bottom: 25px;
+  right: 10px;
+  padding-top: 5px;
+
+
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-family: courier;
+  z-index: 100000;
+}
+
+.restart:hover {
+  background-color: rgb(35, 35, 35);
+}
+
+  /*GENERAL NONSPECIFIC BUTTON*/
+
+.button {
+  display: block;
+  width: 200px;
+  height: 25px;
+  background-color: black;
+
+  position: absolute;
+  margin-left: -100px;
+  padding-top: 5px;
+  float: left;
+
+
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-family: courier;
+  z-index: 100000;
+}
+
+.button:hover {
+  background-color: rgb(35, 35, 35);
+}
+
+/*SPECIFIC BUTTON STYLING/PLACEMENTS*/
+
+.okay {
+  font-size: 0.7em;
+  bottom: 40px;
+  left: 50%;
+}
+  /*LEFT OPTIONS*/
+.kibble, .shoo, .dirty, .no, .no2, .mine, .other {
+  left: 125px;
+}
+  /*CENTER OPTIONS*/
+.fancyFeast, .pet, .clean, .cute, .cute2, .taste, .room, .go {
+  left: 350px;
+}
+  /*RIGHT OPTIONS*/
+.gourmet, .cuddle, .new, .stayHome, .stayHome2, .eat, .bed {
+  left: 575px;
+}
+  /*ONE LINE SMALLER TEXT*/
+.pet, .stayHome2, .no, .no2, .cute, .stayHome, .eat, .room, .bed, .okay {
+  font-size: 0.75em;
+  padding-top: 8px;
+  height: 22px;
+}
+  /*TWO LINES*/
+.new, .cute2, .taste, .other {
+  font-size: 0.75em;
+  padding-top: 3px;
+  height: 27px;
+}

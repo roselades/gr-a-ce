@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>POWER PLANTS</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700|Roboto+Slab" rel="stylesheet">
+  <link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico' />
+  <meta charset="utf-8">
+  <script type="text/javascript" src="scripts/scripts.js"></script>
+</head>
+<body>
+
+  <script type="text/javascript" src="scripts/jquery.min.js"></script>
+  <script type="text/javascript" src="scripts/jquery.jInvertScroll.min.js"></script>
+
+
+  <div class="background-image scroll"></div>
+  <div class="shelf scroll">
+  <img src="images/shelf.png" id="shelf" alt="">
+  <img src="images/vertical.png" id="vertical" alt="">
+  <div id="header">POWER PLANTS</div>
+  <div id="intro">Indigenous cultures have been using plants as medicines for centuries and centuries, and their cures have stood the test of time. Certainly, there's a thing or two we can learn from their practices. Amazingly enough, a lot of the plants and herbs we use regularly in our homes have hidden health benefits we may not be aware of! <span style="font-weight: 700;">Click on each plant to find out what it is, and learn a bit more about what we can gain from it.</span></br></br></div>
+  <img src="images/horizontal.png" id="horizontal" alt="">
+
+  <div id="basilinfo"><span style="text-decoration: underline; font-weight:700; color: green;">Basil</span> is an extremely versatile herb you can add to many different dishes, and receive lots of benefits from. It contains powerful antioxidants, has antibacterial properties, promotes cardiovascular health, and even reduces stress! Next time you’re feeling stressed, consider making some homemade pesto and adding it to chicken or pasta. <a href="https://draxe.com/benefits-of-basil/">Learn more here!</a></div>
+  <div id="dandelioninfo"><span style="text-decoration: underline; font-weight:700; color: green;">Dandelions</span> may be a problem on your lawn, but its a superhero for your health! It’s great for bone health, as it’s rich in calcium. Antioxidants keep the liver in good health, it can help control diabetes, treat urinary disorders, and is great for your skin! Dandelions may not be a regular part of your diet now, however it’s great as a tea or coffee from the stem &amp; seeds, or the flowers can be fried up into fritters. <a href="https://www.organicfacts.net/health-benefits/herbs-and-spices/health-benefits-of-dandelion.html">Learn more here!</a></div>
+  <div id="garlicinfo">In addition to keeping you safe from vampires, <span style="text-decoration: underline; font-weight:700; color: green;">garlic</span> has a ton of other benefits for your health! It boosts the immune system, reduces blood pressure, lowers cholesterol, and improves athletic performance! Garlic is already used in a ton of different recipes, so it’s not hard to include it in your diet at all. <a href="https://www.healthline.com/nutrition/11-proven-health-benefits-of-garlic">Learn more here!</a></div>
+  <div id="gingerinfo"><span style="text-decoration: underline; font-weight:700; color: green;">Ginger</span> is a fantastic ingredient for your health! You can add it to a smoothie or juice, add it to stir fry, make tea from it, or dried it can be used as a spice. What are the benefits of eating lots of ginger? It’s great for digestion, reducing nausea, reducing inflammation, and even cardiovascular health! <a href="https://www.medicalnewstoday.com/articles/265990.php">Learn more here!</a></div>
+  <div id="stjohnsinfo"><span style="text-decoration: underline; font-weight:700; color: green;">St. Johns Wort</span> has been used as a medicinal herb for over 2,000 years. It dates back to ancient Greece, as they believed it had mystical &amp; protective qualities. It's used to naturally treat depression symptoms, aid PMS symptoms, improves mood, and more. It's primarily found in the form of medication. <a href="https://draxe.com/st-johns-wort-uses/">Learn more here!</a></div>
+  <div id="turmericinfo"><span style="text-decoration: underline; font-weight:700; color: green;">Turmeric</span> has been used as a medicinal herb for thousands of years, and for good reason. The active ingredient in turmeric is anti-inflammatory and a great anti-oxidant. It’s also been linked to improve brain functionality, lowers risk of heart disease, and may even delay aging. It's most commonly found in curry.<a href="https://www.healthline.com/nutrition/top-10-evidence-based-health-benefits-of-turmeric#section9">Learn more here!</a></div>
+  <div id="marigoldinfo"><span style="text-decoration: underline; font-weight:700; color: green;">Marigold</span>, in addition to being a gorgeous plant in your gardens, has a lot of surprising benefits. It's great to reduce inflammation, is a natural antiseptic, helps heal wounds, &amp; can be used as a natural bug repellent. It can be added to ointments for its anti-inflammatory properties, or steeped into a tea for other benefits. <a href="https://draxe.com/marigolds/">Learn more here!</a></div>
+  <div id="yarrowinfo"><span style="text-decoration: underline; font-weight:700; color: green;">Yarrow</span> has been used as a medicinal herb since ancient times across cultures, and is actually closely related to chamomile. For centuries its been used as a natural wound treatment, that stops bleeding and encourages healing. It also may have anti-anxiety effects, and can help remedy various gastrointestinal conditions. The plant can be used in soups/stews, salads, or can be a substitute for tarragon if used in dry herb form. <a href="https://draxe.com/yarrow/">Learn more here!</a> </div>
+
+  <img src="images/basil.png" id="basil" alt="basil" onclick="basil();">
+  <img src="images/dandelion.png" id="dandelion" alt="dandelion" onclick="dandelion();">
+  <img src="images/garlic.png" id="garlic" alt="garlic" onclick="garlic();">
+  <img src="images/ginger.png" id="ginger" alt="ginger" onclick="ginger();">
+  <img src="images/stjohns.png" id="stjohns" alt="stjohns" onclick="stjohns();">
+  <img src="images/turmeric.png" id="turmeric" alt="turmeric" onclick="turmeric();">
+  <img src="images/marigold.png" id="marigold" alt="marigold" onclick="marigold();" height=330px>
+  <img src="images/yarrow.png" id="yarrow" alt="yarrow" onclick="yarrow();">
+
+  </div>
+
+  <script type="text/javascript">
+  (function($) {
+      $.jInvertScroll(['.background-image', '.shelf'],);
+  }(jQuery));
+</script>
+
+</body>
+</html>

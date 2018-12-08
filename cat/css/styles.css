@@ -1,0 +1,390 @@
+body {
+  background-image: url("../images/woodBG.jpg");
+  background-repeat: repeat;
+  overflow: hidden;
+}
+
+.tooSmall {
+  height: 100vh;
+  width: 100vw;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-color: rgba(0, 0, 0, 0.85);
+  display: none;
+
+  z-index: 1000000;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+
+
+  z-index: 1000;
+}
+
+.nameOverlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+
+
+  z-index: 500;
+}
+
+#text {
+  height: 300px;
+  width: 500px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -275px;
+  margin-left: -275px;
+  padding: 25px;
+  z-index: 10000;
+
+}
+
+#paper {
+  height: 600px;
+  width: 700px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -300px;
+  margin-left: -350px;
+  background-image: url("../images/paper1.png");
+  background-size: cover;
+  background-repeat: none;
+  z-index: 3;
+}
+
+#linedPaper {
+  height: 330px;
+  width: 550px;
+  margin-left: -275px;
+  margin-top: -165px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  background-image: url("../images/paper-02.png");
+  background-size: cover;
+}
+
+#smallPaper {
+  height: 150px;
+  width: 400px;
+  margin-left: -200px;
+  background-image: url("../images/paper-03.png");
+  background-size: 400px 200px;
+
+  padding-top: 50px;
+
+  position: absolute;
+  top: -2000px;
+  left: 50%;
+
+  line-height: 50px;
+}
+
+#smallerPaper {
+  height: 100px;
+  width: 300px;
+  background-image: url("../images/paper-02.png");
+  background-size: 300px 100px;
+
+  position: absolute;
+  top: -2000px;
+  left: 50%;
+  margin-left: -150px;
+}
+
+.confirmation {
+  height: 300px;
+  width: 500px;
+  background-image: url("../images/paper-03.png");
+  background-size: cover;
+
+  position: absolute;
+  top: -2000px;
+  left: 50%;
+  margin-top: -150px;
+  margin-left: -275px;
+  padding: 25px;
+
+}
+
+h1 {
+  font-family: courier;
+  font-size: 1.5em;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  padding-bottom: 30px;
+  border-bottom: 1px solid black;
+}
+
+h2 {
+  font-family: courier;
+  font-size: 1.5em;
+  text-align: center;
+
+  padding-bottom: 45px;
+}
+
+p {
+  font-family: courier;
+  font-size: 1em;
+  padding-left: 15px;
+  padding-right: 15px;
+  line-height: 40px;
+}
+
+#resize {
+    color: white;
+    font-family: courier;
+    font-size: 1.5em;
+    line-height: 40px;
+    text-align: center;
+
+    width: 350px;
+    height: 250px;
+    margin-top: -125px;
+    margin-left: -175px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+
+}
+
+.readyButton {
+  display: block;
+  width: 200px;
+  height: 25px;
+  background-color: black;
+
+  position: relative;
+  left: 50%;
+  top: 30%;
+  margin-left: -100px;
+  padding-top: 5px;
+
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-family: courier;
+}
+
+.confirmName {
+  display: block;
+  width: 200px;
+  height: 25px;
+  background-color: black;
+
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin-left: -100px;
+  padding-top: 5px;
+
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-family: courier;
+}
+
+.yes {
+  display: block;
+  width: 200px;
+  height: 25px;
+  background-color: black;
+
+  position: relative;
+  top: 30%;
+  padding-top: 5px;
+
+  float: left;
+
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-family: courier;
+}
+
+.no {
+  display: block;
+  width: 200px;
+  height: 25px;
+  background-color: black;
+
+  position: relative;
+  top: 30%;
+  padding-top: 5px;
+  margin-left: 100px;
+
+  float: left;
+
+
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-family: courier;
+}
+
+
+.readyButton:hover, .confirmName:hover, .yes:hover , .no:hover, .submit:hover  {
+  background-color: rgb(35, 35, 35);
+}
+
+.nameInput {
+  font-family: courier;
+  font-size: 1em;
+
+  position: relative;
+  left: 50%;
+  margin-left: -150px;
+
+  width: 300px;
+
+  margin-bottom: 100px;
+}
+
+label {
+  text-align: center;
+}
+.white {
+  width: 200px;
+  height: 200px;
+  background-image: url("../images/TEST CAT LR SPRITE SHEET.png");
+  background-position: center;
+
+  position: absolute;
+  top: 55%;
+  left: 45%;
+  margin-left: -100px;
+  margin-top: -100px;
+
+  animation: right 2s steps(7) infinite;
+  animation-play-state: paused;
+
+  cursor: pointer;
+
+}
+
+@keyframes right {
+
+  0% { background-position: left;}
+
+  30% {background-position: left;}
+
+  40% { background-position: right;}
+
+  50% {background-position: right;}
+
+  80% { background-position: left;}
+
+  100% { background-position: left;}
+
+}
+
+.black {
+  width: 200px;
+  height: 200px;
+  background-image: url("../images/TEST BLACK CAT LR SPRITE SHEET.png");
+  background-position: left;
+
+  position: absolute;
+  top: 55%;
+  left: 45%;
+  margin-left: -100px;
+  margin-top: -100px;
+
+  animation: right 2s steps(7) infinite;
+  animation-play-state: paused;
+
+  cursor: pointer;
+
+}
+
+.options {
+  width: 600px;
+  height: 400px;
+  position: absolute;
+
+  top: -2000px;
+  left: 50%;
+
+  margin-top: -150px;
+  margin-left: -300px;
+}
+
+.option1 {
+  width: 300px;
+  height: 400px;
+
+  background-image: url("../images/paper-04.png");
+  background-size: 300px 400px;
+
+  position: absolute;
+  float: left;
+  display: block;
+
+  cursor: pointer;
+}
+
+.option2 {
+  width: 300px;
+  height: 400px;
+
+  background-image: url("../images/paper-05.png");
+  background-size: 300px 400px;
+
+  position: absolute;
+  left: 300px;
+  display: block;
+
+  transition: background-color 0.25s;
+
+  cursor: pointer;
+
+}
+
+.submit {
+  display: block;
+  width: 200px;
+  height: 25px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -100px;
+  margin-top: -20px;
+  padding-top: 5px;
+
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-family: courier;
+  background-color: black;
+}
+
+
+@keyframes wag {
+
+0% {background-position: left;}
+
+50% {background-position: right;}
+
+100% {background-position: left;}
+
+}

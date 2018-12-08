@@ -1,0 +1,268 @@
+/*background & scroll styling*/
+
+body {
+  width: 4000px;
+  overflow-x: hidden;
+
+}
+
+.scroll {
+  position:fixed;
+  bottom: 0;
+  left: 0;
+}
+
+
+.background-image {
+  width: 1500px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url(../images/background.png);
+  background-repeat: repeat-x;
+  position: fixed;
+  z-index: 1;
+
+}
+
+/*background fixed & scrolling elements*/
+
+.shelf {
+  position:fixed;
+  z-index:1000;
+  width: 3000px;
+  height: 100%;
+}
+
+#shelf {
+  position:absolute;
+  top: 340px;
+  left: 500px;
+}
+
+#vertical {
+  position:absolute;
+  z-index: 1999;
+  top: 20px;
+  left: 20px;
+}
+
+#horizontal {
+  position:fixed;
+  z-index: 1000;
+  top: 20px;
+  left: 490px;
+}
+
+/*plant illustrations & hover states*/
+
+#basil {
+  position:absolute;
+  z-index:2000;
+  top: 150px;
+  left: 600px;
+}
+
+#basil:hover {
+  cursor:pointer;
+}
+
+#dandelion {
+  position:absolute;
+  z-index: 2001;
+  top:325px;
+  left:850px;
+}
+
+#dandelion:hover {
+  cursor:pointer;
+}
+
+#garlic {
+  position:absolute;
+  z-index: 2002;
+  top: 405px;
+  left: 1120px;
+}
+
+#garlic:hover {
+  cursor:pointer;
+}
+
+#ginger {
+  position:absolute;
+  z-index: 2003;
+  top: 410px;
+  left: 1350px;
+}
+
+#ginger:hover {
+  cursor:pointer;
+}
+
+#stjohns {
+  position:absolute;
+  z-index:2004;
+  top:320px;
+  left: 1650px;
+}
+
+#stjohns:hover {
+  cursor:pointer;
+}
+
+#turmeric {
+  position:absolute;
+  z-index: 2005;
+  top: 460px;
+  left: 2000px;
+}
+
+#turmeric:hover {
+  cursor:pointer;
+}
+
+#marigold {
+  position:absolute;
+  z-index:2006;
+  top: 250px;
+  left: 2265px;
+}
+
+#marigold:hover {
+  cursor:pointer;
+}
+
+#yarrow {
+  position:absolute;
+  z-index: 2007;
+  top: 370px;
+  left: 2540px;
+}
+
+#yarrow:hover {
+  cursor:pointer;
+}
+
+/*text content styling*/
+
+#header {
+  position: absolute;
+  z-index: 10000;
+  width:294px;
+  height: 50px;
+  top: 200px;
+  left: 100px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 2.3em;
+  border-bottom: 2px solid green;
+  text-align: center;
+
+}
+
+#intro {
+  position: absolute;
+  z-index: 10001;
+  width: 294px;
+  height: 272px;
+  top: 272px;
+  left: 100px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: .75em;
+  text-align: justify;
+}
+
+#gingerinfo {
+  position: fixed;
+  z-index: 1001;
+  top: 50px;
+  left: 550px;
+  width: 660px;
+  height: 143px;
+  font-family: 'Roboto Mono', monospace;
+  text-align: justify;
+  display:none;
+}
+#garlicinfo {
+  position: fixed;
+  z-index: 1001;
+  top: 50px;
+  left: 550px;
+  width: 660px;
+  height: 143px;
+  font-family: 'Roboto Mono', monospace;
+  text-align: justify;
+  display:none;
+}
+
+#dandelioninfo {
+  position: fixed;
+  z-index: 1001;
+  top: 50px;
+  left: 550px;
+  width: 660px;
+  height: 143px;
+  font-family: 'Roboto Mono', monospace;
+  text-align: justify;
+  display:none;
+}
+
+#basilinfo {
+  position: fixed;
+  z-index: 1001;
+  top: 50px;
+  left: 550px;
+  width: 660px;
+  height: 143px;
+  font-family: 'Roboto Mono', monospace;
+  text-align: justify;
+  display:none;
+}
+
+#stjohnsinfo {
+  position: fixed;
+  z-index: 1001;
+  top: 50px;
+  left: 550px;
+  width: 660px;
+  height: 143px;
+  font-family: 'Roboto Mono', monospace;
+  text-align: justify;
+  display:none;
+}
+
+#turmericinfo {
+  position: fixed;
+  z-index: 1001;
+  top: 50px;
+  left: 550px;
+  width: 660px;
+  height: 143px;
+  font-family: 'Roboto Mono', monospace;
+  text-align: justify;
+  display:none;
+}
+
+#marigoldinfo {
+  position: fixed;
+  z-index: 1001;
+  top: 50px;
+  left: 550px;
+  width: 660px;
+  height: 143px;
+  font-family: 'Roboto Mono', monospace;
+  text-align: justify;
+  display:none;
+}
+
+#yarrowinfo {
+  position: fixed;
+  z-index: 1001;
+  top: 50px;
+  left: 550px;
+  width: 660px;
+  height: 143px;
+  font-family: 'Roboto Mono', monospace;
+  text-align: justify;
+  display:none;
+}
