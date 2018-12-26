@@ -14,8 +14,8 @@ body {
 
 
 .background-image {
-  width: 1500px;
-  height: 100%;
+  width: 110vw;
+  height: 100vh;
   top: 0;
   left: 0;
   background-image: url(../images/background.png);
@@ -32,6 +32,7 @@ body {
   z-index:1000;
   width: 3000px;
   height: 100%;
+  top: 15%;
 }
 
 #shelf {
@@ -50,8 +51,15 @@ body {
 #horizontal {
   position:fixed;
   z-index: 1000;
-  top: 20px;
-  left: 490px;
+}
+
+.info {
+  position: fixed;
+  width: 800px;
+  height: 300px;
+  z-index: 1000;
+  top: 15%;
+  right: 5%;
 }
 
 /*plant illustrations & hover states*/
@@ -172,94 +180,21 @@ body {
   text-align: justify;
 }
 
-#gingerinfo {
-  position: fixed;
-  z-index: 1001;
-  top: 50px;
-  left: 550px;
-  width: 660px;
-  height: 143px;
-  font-family: 'Roboto Mono', monospace;
-  text-align: justify;
-  display:none;
-}
-#garlicinfo {
-  position: fixed;
-  z-index: 1001;
-  top: 50px;
-  left: 550px;
-  width: 660px;
-  height: 143px;
-  font-family: 'Roboto Mono', monospace;
-  text-align: justify;
-  display:none;
+a {
+  color: green;
+  font-weight: bold;
 }
 
-#dandelioninfo {
-  position: fixed;
-  z-index: 1001;
-  top: 50px;
-  left: 550px;
-  width: 660px;
-  height: 143px;
-  font-family: 'Roboto Mono', monospace;
-  text-align: justify;
-  display:none;
+a:active {
+  color: green;
+  font-weight: bold;
 }
 
-#basilinfo {
-  position: fixed;
+#gingerinfo, #garlicinfo, #dandelioninfo, #basilinfo, #stjohnsinfo, #turmericinfo, #marigoldinfo, #yarrowinfo {
+  position: absolute;
   z-index: 1001;
-  top: 50px;
-  left: 550px;
-  width: 660px;
-  height: 143px;
-  font-family: 'Roboto Mono', monospace;
-  text-align: justify;
-  display:none;
-}
-
-#stjohnsinfo {
-  position: fixed;
-  z-index: 1001;
-  top: 50px;
-  left: 550px;
-  width: 660px;
-  height: 143px;
-  font-family: 'Roboto Mono', monospace;
-  text-align: justify;
-  display:none;
-}
-
-#turmericinfo {
-  position: fixed;
-  z-index: 1001;
-  top: 50px;
-  left: 550px;
-  width: 660px;
-  height: 143px;
-  font-family: 'Roboto Mono', monospace;
-  text-align: justify;
-  display:none;
-}
-
-#marigoldinfo {
-  position: fixed;
-  z-index: 1001;
-  top: 50px;
-  left: 550px;
-  width: 660px;
-  height: 143px;
-  font-family: 'Roboto Mono', monospace;
-  text-align: justify;
-  display:none;
-}
-
-#yarrowinfo {
-  position: fixed;
-  z-index: 1001;
-  top: 50px;
-  left: 550px;
+  top: 30px;
+  left:58px;
   width: 660px;
   height: 143px;
   font-family: 'Roboto Mono', monospace;
