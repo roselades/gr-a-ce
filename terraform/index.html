@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>[ T E R R A F O R M ]</title>
+        <link href="css/reset.css" rel="stylesheet" type="text/css" />
+        <link href="css/styles.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,600|Open+Sans" rel="stylesheet">
+
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.1.3.js" ></script>
+    </head>
+    <body>
+
+      <div class="browserOverlay"><div class="text"><h1  id="header" style="text-align: center;">[ A T T E N T I O N ]</h1></br></br></br></br><p id="bodyText"><span style="text-align: left;">hi there.</span></br><span style="text-align: right;">this experience requires firefox to funciton properly.</span></br><span style="text-align: left;">sorry about that.</span>
+      </p></div></div>
+
+      <div class="loadingScreen">
+        <h1 id="header" style="text-align: center; position: absolute; left: 50%; margin-left: -400px; top: 20%;">[ L O A D I N G . . . ]</h1>
+        <p class="bodyPhaseOne" style="top: 30%;">this may take a while on slow internet connection upon first load.</p>
+        <div class="loader"></div>
+      </div>
+
+      <div class="audioOnOff">
+      <a href="#" class="audioOnOffWhite"></a>
+      <a href="#" class="audioOnOffBlack"></a>
+      </div>
+
+    <div class="introOverlay">
+      <div class="texture"></div>
+      <div class="text">
+        <h1  id="header" style="text-align: center;">[ T E R R A F O R M ]</h1>
+          </br></br></br></br>
+        <p id="bodyText"><span style="text-align: left;">in a universe, lies a formless and desolate entity.</span></br><span style="text-align: right;">destiny has chosen the fate of this entity;</span></br><span style="text-align: center">to become a planet.</span></br><span style="text-align: left;">it is up to you, how this planet forms.</span></br><span style="text-align: right;">how will you shape it?</span><p>
+          </br></br>
+        <a href="#" class="button begin">begin</a>
+
+      </div>
+    </div>
+
+    <div class="planetTemp">
+      <div class="warm"></div>
+      <div class="cold"></div>
+      <div class="fire"></div>
+    </div>
+
+    <div class="planet">
+    <div class="shading"></div>
+    <!-- WATER OVERLAYS -->
+    <div class="water1"></div>
+    <div class="water2"></div>
+    <div class="water3"></div>
+    <div class="water4"></div>
+    <div class="water5"></div>
+    <!-- TERRAIN OVERLAYS -->
+    <div class="barren"></div>
+    <div class="somewhatBarren"></div>
+    <div class="somewhatMountain"></div>
+    <div class="mountains"></div>
+    <div class="terrainBad"></div>
+    <!-- CREATURE OVERLAYS -->
+    <div class="creatures1"></div>
+    <div class="creatures2"></div>
+    <div class="creatures3"></div>
+    <div class="creatures4"></div>
+    <!-- HUMAN OVERLAYS -->
+    <div class="humans1"></div>
+    <div class="humans2"></div>
+    <div class="humans3"></div>
+    <div class="humans4"></div>
+    <div class="humans5"></div>
+    </div>
+
+    <div class="day1">
+      <div class="dark">
+        <h1 id="header" class="one">[ T E R R A F O R M ]</h1> <h1 id="header" class="two">[ T H E - B E G I N N I N G ]</h1>
+        <p class="bodyPhaseOne"><span style="text-align: left;">your planet is shapeless ; formless.</span></br><span style="text-align: right;">it is an incredibly dark void,</span></br><span style="text-align: left;">particles without a purpose.</span></p>
+        <a class="button light">let there be light</a>
+      </div>
+    </div>
+
+    <div class="background"></div>
+
+    <div class="rightNav">
+      <a href="#" title="PHASE - ONE" class="option first masterTooltip2"></a>
+      <a href="#" title="PHASE - TWO" class="option second masterTooltip2"></a>
+      <a href="#" title="PHASE - THREE" class="option third masterTooltip2"></a>
+      <a href="#" title="PHASE - FOUR" class="option fourth masterTooltip2"></a>
+      <a href="#" title="PHASE - FIVE" class="option fifth masterTooltip2"></a>
+      <a href="#" title="PHASE - SIX" class="option sixth masterTooltip2"></a>
+    </div>
+
+    <div class="phaseOne"><h1 id="header" class="one" style="color: rgb(40, 40, 40);">[ T E R R A F O R M ]</h1> <h1 id="header" class="two" style="color: rgb(40, 40, 40);">[ P H A S E - O N E ]</h1>
+      <p class="bodyPhaseOne" style="color: rgb(40, 40, 40); line-height: 40px;">and then there was light. </br>how much light do you put into your world?</p>
+      <div class="controlContainer"><input type="range" id="lightRange"  class="masterTooltip" title="dark to light" min="0" max="100">
+      <a href="#" class="button continue1">continue</a></div></div>
+
+    <div class="phaseTwo" style="display: none;"><h1 id="header" class="one" style="color: rgb(40, 40, 40);">[ T E R R A F O R M ]</h1> <h1 id="header" class="two" style="color: rgb(40, 40, 40);">[ P H A S E - T W O ]</h1>
+      <p class="bodyPhaseOne" style="color: rgb(40, 40, 40);"><span style="text-align: left;">any habitable planet needs water.</span></br><span style="text-align: right;">does the planet offer little water?</span></br><span style="text-align: left;">or a bountiful supply?</span></p>
+      <div class="controlContainer">
+      <input type="range" id="waterRange" class="masterTooltip" title="none to plenty" min="0" max="5">
+      <a href="#" class="button continue2">continue</a></div></div>
+
+    <div class="phaseThree" style="display: none;"><h1 id="header" class="one" style="color: rgb(40, 40, 40);">[ T E R R A F O R M ]</h1> <h1 id="header" class="two" style="color: rgb(40, 40, 40);">[ P H A S E - T H R E E ]</h1>
+      <p class="bodyPhaseOne" style="color: rgb(40, 40, 40);"><span style="text-align: left;">as to bodies of water, there is terrain.</span></br><span style="text-align: center;">what is the terrain like?</span></br><span style="text-align: right;">is it lush and green, or barren?</span></p>
+      <div class="controlContainer">
+      <input type="range" id="terrainRange"  class="masterTooltip" title="barren to lush" min="0" max="3">
+      <a href="#" class="button continue3">continue</a></div></div>
+
+    <div class="phaseFour" style="display: none;"><h1 id="header" class="one" style="color: rgb(40, 40, 40);">[ T E R R A F O R M ]</h1> <h1 id="header" class="two" style="color: rgb(40, 40, 40);">[ P H A S E - F O U R ]</h1>
+      <p class="bodyPhaseOne" style="color: rgb(40, 40, 40);"><span style="text-align: left;">while the state of weather is up to fate,</span></br><span style="text-align: right;">you may decide it's average state.</span></br><span style="text-align: left;">what is the typical state of the atmosphere?</span></p>
+      <div class="controlContainer">
+      <input type="range" id="tempRange"  class="masterTooltip" title="cold to warm" min="0" max="100">
+      <a href="#" class="button continue4">continue</a></div></div>
+
+    <div class="phaseFive" style="display: none;"><h1 id="header" class="one" style="color: rgb(40, 40, 40);">[ T E R R A F O R M ]</h1> <h1 id="header" class="two" style="color: rgb(40, 40, 40);">[ P H A S E - F I V E ]</h1>
+      <p class="bodyPhaseOne" style="color: rgb(40, 40, 40); width: 450px;"><span style="text-align: left;">your planet is habitable for all creatures,</span></br><span style="text-align: right;"> large and small.</span></br><span style="text-align: left;">how many of them live here?</span></p>
+      <div class="controlContainer">
+      <input type="range" id="creatureRange"  class="masterTooltip" title="none to many" min="0" max="4">
+      <a href="#" class="button continue5">continue</a></div></div>
+
+    <div class="phaseSix" style="display: none;"><h1 id="header" class="one" style="color: rgb(40, 40, 40);">[ T E R R A F O R M ]</h1> <h1 id="header" class="two" style="color: rgb(40, 40, 40);">[ P H A S E - S I X ]</h1>
+      <p class="bodyPhaseOne" style="color: rgb(40, 40, 40);"><span style="text-align: left;">higher intellectual beings (humans) have</span></br><span style="text-align: right;"> the ability to advance your planet further.</span></br><span style="text-align: left;">would you like many of them? or few?</span></p>
+      <div class="controlContainer"><input type="range" id="humanRange"  class="masterTooltip" title="few to many" min="1" max="5">
+      <a href="#" class="button continue6">continue</a></div></div>
+
+    <div class="phaseSeven" style="display: none;"><h1 id="header" class="one" style="color: rgb(40, 40, 40);">[ T E R R A F O R M ]</h1> <h1 id="header" class="two" style="color: rgb(40, 40, 40);">[ P H A S E - S E V E N ]</h1>
+      <p class="bodyPhaseOne" style="color: rgb(40, 40, 40);"><span style="text-align: left;">at last, the entity is fully evolved.</span></br><span style="text-align: right;">your hard work has paid off,</span></br><span style="text-align: left;">it is now the time for rest.</span></p>
+      <div class="controlContainer"><a href="#" class="button continue7">rest.</a></div></div>
+
+    <div class="restImage"></div>
+
+    <div class="phaseEight" style="display: none;"><h1 id="header" class="one" style="color: rgb(40, 40, 40);">[ T E R R A F O R M ]</h1> <h1 id="header" class="two" style="color: rgb(40, 40, 40);">[ C O M P L E T E ? ]</h1>
+      <p class="bodyPhaseOne" style="color: rgb(40, 40, 40);"><span style="text-align: left;">oh? what happened here?</span></br><span style="text-align: right;">it seems as though the planet is destroyed.</span></br><span style="text-align: left;">how could this happen?</span></p>
+      <div class="controlContainer"><a href="#" class="button continue8">how?</a></div></div>
+
+    <div class="phaseNine" style="display: none;"><h1 id="header" class="one" style="color: rgb(40, 40, 40);">[ T E R R A F O R M ]</h1> <h1 id="header" class="two" style="color: rgb(40, 40, 40);">[ C O M P L E T E ? ]</h1>
+      <p class="bodyPhaseOne" style="color: rgb(40, 40, 40); width: 500px; margin-left: -250px;"><span style="text-align: left;">it seems the humans destroyed the planet.</span></br><span style="text-align: right;">while they may be intelligent, their society inevitably</span></br><span style="text-align: left;">shattered the wellbeing of the planet.</span></p>
+      <div class="controlContainer"><a href="#" class="button continue9" style="font-size: 2em;">→</a></div></div>
+
+    <div class="phaseTen" style="display: none;"><h1 id="header" class="one" style="color: rgb(40, 40, 40);">[ T E R R A F O R M ]</h1> <h1 id="header" class="two" style="color: rgb(40, 40, 40);">[ C O M P L E T E ? ]</h1>
+      <p class="bodyPhaseOne" style="color: rgb(40, 40, 40); width: 500px; margin-left: -250px;"><span style="text-align: left;">what a silly thing is it,</span></br><span style="text-align: right;">the most advanced species on the planet</span></br><span style="text-align: left;">ruined their greatest gift.</span></p>
+      <div class="controlContainer"><a href="#" class="button continue10" style="font-size: 2em;">→</a></div></div>
+
+    <div class="phaseEleven" style="display: none;"><h1 id="header" class="one" style="color: rgb(40, 40, 40);">[ T E R R A F O R M ]</h1> <h1 id="header" class="two" style="color: rgb(40, 40, 40);">[ C O M P L E T E ? ]</h1>
+      <p class="bodyPhaseOne" style="color: rgb(40, 40, 40); width: 500px; margin-left: -250px;"><span style="text-align: left;">yet, take a look at the planet you're living on.</span></br><span style="text-align: right;">it's condition is declining rapidly,</span></br><span style="text-align: left;">because of it's "smartest" beings.</span></p>
+      <div class="controlContainer"><a href="#" class="button continue11" style="font-size: 2em;">→</a></div></div>
+
+    <div class="phaseTwelve" style="display: none;"><h1 id="header" class="one" style="color: rgb(40, 40, 40);">[ T E R R A F O R M ]</h1> <h1 id="header" class="two" style="color: rgb(40, 40, 40);">[ C O M P L E T E ? ]</h1>
+      <p class="bodyPhaseOne" style="color: rgb(40, 40, 40); width: 500px; margin-left: -250px;"><span style="text-align: left;">global warming is occuring at the hands of you,</span></br><span style="text-align: right;">and the hands of every other human.</span></br><span style="text-align: left; text-decoration: underline;">time is running out.</span></p>
+      <div class="controlContainer"><a href="#" class="button continue12" style="font-size: 2em;">→</a></div></div>
+
+    <div class="phaseThirteen" style="display: none;"><h1 id="header" class="one" style="color: rgb(40, 40, 40);">[ T E R R A F O R M ]</h1> <h1 id="header" class="two" style="color: rgb(40, 40, 40);">[ C O M P L E T E ? ]</h1>
+      <p class="bodyPhaseOne" style="color: rgb(40, 40, 40); width: 500px; margin-left: -250px;"><span style="text-align: left;">if humans don't band together to</span></br><span style="text-align: right;">save earth's atmosphere by 2030,</span></br><span style="text-align: left;">there is no going back.</span></p>
+      <div class="controlContainer"><a href="#" class="button continue13" style="font-size: 2em;">→</a></div></div>
+
+    <div class="phaseFourteen" style="display: none;"><h1 id="header" class="one" style="color: rgb(40, 40, 40);">[ T E R R A F O R M ]</h1> <h1 id="header" class="two" style="color: rgb(40, 40, 40);">[ C O M P L E T E ? ]</h1>
+      <p class="bodyPhaseOne" style="color: rgb(40, 40, 40); width: 500px; margin-left: -250px;"><span style="text-align: left;">your planet could end up just like</span></br><span style="text-align: right;">your little creation here.</span></br><span style="text-align: left;">what will you do?</span></p>
+      <div class="controlContainer"><a href="learnmore.html" class="button continue14">learn more</a></div></div>
+
+
+        <script type="text/javascript" src="js/custom_behaviors.js"></script>
+    </body>
+</html>
