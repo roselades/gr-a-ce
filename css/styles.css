@@ -1,63 +1,122 @@
 body {
-  background-color: #833ab4;
-  animation: color 30s infinite;
+  background-color: #FAFFD6;
+  overflow: hidden;
+
 }
 
-@keyframes color {
-  0% {
-    background-color:#833ab4;
-  }
-  10% {
-    background-color: #fd1d1d;
-  }
-  20% {
-    background-color: #fcb045;
-  }
-  30% {
-    background-color: #4BC0C8;
-  }
-  40%: {
-    background-color: #ffffff;
-  }
-  50% {
-    background-color: #f9d423;
-  }
-  60% {
-    background-color: #bb377d;
-  }
-  70% {
-    background-color: #00d2ff;
-  }
-  80% {
-    background-color: #ff9472;
-  }
-  90% {
-    background-color: #fff94c;
-  }
-  100% {
-    background-color: #833ab4;
-  }
+h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4em;
+  color: #E687FF;
+
+  text-align: center;
+
+  position: absolute;
+  width: 800px;
+  top: 20%;
+  left: 50%;
+  margin-left: -400px;
+
+  animation: 20s colors infinite;
 }
 
-#container {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  top: 0px;
-  left: 15px;
+.container{
+  width: 400px;
+  height: 200px;
+  position: absolute;
+
+  top: 40%;
+  left: 50%;
+  margin-left: -200px;
+
 }
 
-#hello {
-  font-family: 'Roboto', sans-serif;
-  font-size: 10em;
-  z-index: 1001;
-  position: relative;
-  top: 5%;
+.linkedIn {
+  background-image: url("../images/linkedin.png");
+  background-repeat: no-repeat;
+
+  display: block;
+
+  position: absolute;
+
+
+  height: 155px;
+  width: 150px;
 }
 
-#text {
-  font-size: 3em;
-  font-family: 'Roboto', sans-serif;
-  z-index: 1000;
-  position: relative;
+.linkedInContainer{
+  width: 150px;
+  height: 155px;
+
+  display: block;
+
+  position: absolute;
+
+}
+
+.linkedInShadow{
+  background-image: url("../images/linkedinHover.png");
+  background-repeat: no-repeat;
+  display: none;
+
+  width: 150px;
+  height: 155px;
+}
+
+.behance {
+  background-image: url("../images/behance.png");
+  background-repeat: no-repeat;
+
+  display: block;
+
+  position: absolute;
+
+  right: 0%;
+
+  height: 155px;
+  width: 150px;
+}
+
+.behanceContainer{
+  width: 150px;
+  height: 155px;
+
+  display: block;
+
+  right: 0;
+
+  position: absolute;
+
+}
+
+.behanceShadow{
+  background-image: url("../images/behanceHover.png");
+  background-repeat: no-repeat;
+
+  display: none;
+
+  width: 150px;
+  height: 155px;
+}
+
+@keyframes colors {
+  0%{
+    color: #E687FF;
+  }
+
+  25%{
+    color: #AAFF27;
+  }
+
+  50%{
+    color: #ECFF31;
+  }
+
+  75%{
+    color: : 	#FF82B6;
+  }
+
+  100%{
+    color: #E687FF;
+  }
 }
