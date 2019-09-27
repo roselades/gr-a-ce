@@ -1,122 +1,410 @@
-body {
-  background-color: #FAFFD6;
-  overflow: hidden;
+/* GLOBAL STYLES///////////////////////////////////////////////////////// */
+
+@font-face {
+    font-family: 'rubik_mono_oneregular';
+    src: url('../fonts/rubikmonoone-regular-webfont.woff2') format('woff2'),
+         url('../fonts/rubikmonoone-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
 }
 
-h1{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 4em;
-  color: #E687FF;
+@font-face {
+    font-family: 'montserratsemibold';
+    src: url('../fonts/montserrat-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
-  text-align: center;
+}
+@font-face {
+    font-family: 'montserratmedium';
+    src: url('../fonts/montserrat-medium-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
-  position: absolute;
-  width: 800px;
-  top: 20%;
-  left: 50%;
-  margin-left: -400px;
+}
+@font-face {
+    font-family: 'montserratmedium_italic';
+    src: url('../fonts/montserrat-mediumitalic-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-mediumitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
-  animation: 20s colors infinite;
+}
+@font-face {
+    font-family: 'montserratregular';
+    src: url('montserrat-regular-webfont.woff2') format('woff2'),
+         url('montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+	overflow-x: hidden;
 }
 
 .container{
-  width: 400px;
-  height: 200px;
-  position: absolute;
+	margin-left:auto;
+	margin-right:auto;
 
-  top: 40%;
-  left: 50%;
-  margin-left: -200px;
+	height: 100vh;
 
+	background-color: black;
 }
 
-.linkedIn {
-  background-image: url("../images/linkedin.png");
-  background-repeat: no-repeat;
-
-  display: block;
-
-  position: absolute;
-
-
-  height: 155px;
-  width: 150px;
+#headline{
+	z-index: 10000;
+	position: absolute;
 }
 
-.linkedInContainer{
-  width: 150px;
-  height: 155px;
+h1{
+	color: white;
+	z-index: 1000;
 
-  display: block;
+	font-family: "rubik_mono_oneregular";
 
-  position: absolute;
-
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, .9);
 }
 
-.linkedInShadow{
-  background-image: url("../images/linkedinHover.png");
-  background-repeat: no-repeat;
+h2{
+	color: white;
+	z-index: 1000;
+
+	font-family:"montserratmedium";
+
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, .9);
+}
+
+h3 {
+  color: white;
+  font-family: "rubik_mono_oneregular";
+
+  z-index: 1000;
+}
+
+p{
+  color: white;
+  font-family:"montserratmedium";
+
+  z-index: 1000;
+}
+
+a {
+	text-decoration: none;
+}
+
+.glyph {
+		display: inline;
+		width: 9em;
+		text-align: center;
+		vertical-align: top;
+}
+
+.glyph svg.icon {
+		width: 39.7px;
+		height: 39.7px;
+
+		margin-right: 10px;
+}
+
+symbol{
+	fill: white;
+}
+
+#alert {
+  position: absolute;
+  top: -50px;
   display: none;
-
-  width: 150px;
-  height: 155px;
 }
+/* MOBILE STYLES ////////////////////////////////////////////////////////////////////////////////////////////////*/
+@media only screen and (max-width: 767px){
 
-.behance {
-  background-image: url("../images/behance.png");
-  background-repeat: no-repeat;
+	body {
+		background-color: black;
+	}
 
-  display: block;
+	.container{
+		width:87.5%; /* 280 pixels at a 320 pixel screen width (iPhone 3 / 4 / 5) */
+		height: 100vh;
+	}
 
-  position: absolute;
+	#image{
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		height: 165px;
+		background-color: rgba(255, 0, 0, 0.4);
+		width: 100vw;
 
-  right: 0%;
+		background-image: url("../images/mobile/bg1.png");
+		background-position: center;
+		background-size: cover;
 
-  height: 155px;
-  width: 150px;
-}
+    filter: brightness(70%);
+	}
 
-.behanceContainer{
-  width: 150px;
-  height: 155px;
+	#headline{
+		z-index: 10000;
+		position: absolute;
+		width: 300px;
+		height: 100px;
+		top: 100px;
+	}
 
-  display: block;
+	h1{
+		font-size: 18px;
+		z-index: 1000;
+	}
 
-  right: 0;
+	h2{
+		font-size: 12px;
+		line-height: 22px;
+	}
 
-  position: absolute;
-
-}
-
-.behanceShadow{
-  background-image: url("../images/behanceHover.png");
-  background-repeat: no-repeat;
-
-  display: none;
-
-  width: 150px;
-  height: 155px;
-}
-
-@keyframes colors {
-  0%{
-    color: #E687FF;
+  h3 {
+    font-size: 24px;
   }
 
-  25%{
-    color: #AAFF27;
+  P{
+    font-size: 14px;
   }
 
-  50%{
-    color: #ECFF31;
+  #para {
+    width: 87.5%;
+    position: absolute;
+    top: 190px;
   }
 
-  75%{
-    color: : 	#FF82B6;
+	#icons {
+		display: block;
+		width: 280px;
+		position: relative;
+		bottom: -430px;
+		margin-right: auto;
+		margin-left: auto;
+		z-index: 100000;
+	}
+
+	.glyph {
+			display: inline;
+			width: 9em;
+			text-align: center;
+			vertical-align: top;
+			margin-right: 23px;
+	}
+
+	.glyph:nth-child(1){
+		margin-left: 26px;
+	}
+
+	.glyph:nth-of-type(4n){
+		margin-right: 0px;
+	}
+
+	.glyph svg.icon {
+			width: 39.7px;
+			height: 39.7px;
+	}
+}
+
+/* TABLET STYLES ////////////////////////////////////////////////////////////////////////////////////////////////*/
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+
+	body {
+		overflow-y: hidden;
+		background-color: black;
+	}
+
+	.container{
+		width:93.75%; /* 720 pixels at a 768 pixel screen width (iPads) */
+	}
+
+	#image{
+		position: relative;
+		display: block;
+		top: 0px;
+		right: 100px;
+		height: 100vh;
+		width: 309px;
+
+		background-image: url("../images/tablet/bg1.png");
+		background-position: center;
+		background-size: cover;
+
+    filter: brightness(70%);
+	}
+
+	#headline{
+		z-index: 10000;
+		position: absolute;
+		top: 30px;
+		width: 200px;
+		height: 100px;
+	}
+
+	h1{
+		font-size: 24px;
+		z-index: 1000;
+	}
+
+	h2{
+		font-size: 13px;
+		line-height: 23px;
+	}
+
+  h3 {
+    font-size: 28px;
   }
 
-  100%{
-    color: #E687FF;
+  p{
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  #para {
+    width: 285px;
+    height: 200px;
+
+    position: absolute;
+    left: 47%;
+    top: 30%;
+  }
+
+	#icons {
+		width: 200px;
+		position: relative;
+		bottom: 50px;
+		z-index: 100000;
+	}
+
+	.glyph {
+			display: inline;
+			width: 9em;
+			text-align: center;
+			vertical-align: top;
+			margin-right: 10px;
+	}
+
+	.glyph:nth-of-type(4n){
+		margin-right: 0px;
+	}
+
+	.glyph svg.icon {
+			width: 25px;
+			height: 25px;
+	}
+}
+
+/* DESKTOP STYLES ////////////////////////////////////////////////////////////////////////////////////////////////*/
+@media only screen and (min-width: 1024px){
+
+	body{
+		overflow-y: hidden;
+		background-color: #09091D;
+	}
+
+	.container{
+		/*width:95.5%;*/
+		width:978px;
+	}
+
+	#image{
+		position: relative;
+    display: block;
+		top: 0px;
+		right: 1733px;
+		height: 100vh;
+		width: 2000px;
+
+		background-image: url("../images/desktop/bg1.png");
+		background-position: center;
+		background-size: contain;
+    background-position: right;
+
+    filter: brightness(70%);
+	}
+
+	h1{
+		font-size: 28px;
+		z-index: 1000;
+	}
+
+	h2{
+		font-size: 14px;
+		line-height: 30px;
+	}
+
+  h3 {
+    font-size: 36px;
+
+  }
+
+  p{
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  #para {
+    width: 338px;
+    height: 200px;
+
+    position: absolute;
+    left: 47%;
+    top: 30%;
+
+  }
+
+	#headline{
+		z-index: 10000;
+		position: absolute;
+		top: 50px;
+		width: 250px;
+		height: 100px;
+	}
+
+	#icons {
+		width: 230px;
+		position: relative;
+		bottom: 50px;
+		z-index: 100000;
+	}
+
+	.glyph {
+			display: inline;
+			width: 9em;
+			text-align: center;
+			vertical-align: top;
+			margin-right: 10px;
+	}
+
+	.glyph:nth-of-type(4n){
+		margin-right: 0px;
+	}
+
+	.glyph svg.icon {
+			width: 30px;
+			height: 30px;
+
+      filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+	}
+
+	symbol:hover{
+		fill: rgb(214, 214, 214);
+		transition: 0.25s all;
+	}
+
+  .tooltip {
+    display:none;
+    position:absolute;
+    background-color:rgba(255, 174, 54,0.7);
+    border-radius:5px;
+    padding:10px;
+    color:#fff;
+    font-size:12px;
+    font-family: "montserratmedium";
+    z-index: 100000;
   }
 }
