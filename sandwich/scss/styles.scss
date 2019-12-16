@@ -1,0 +1,513 @@
+@import 'font_face';
+
+@include font-face(Sans-Culottes, "../fonts/sans-culottes/sansculottes-webfont");
+@include font-face(Open-Sans-Light, "../fonts/open_sans/opensans-light-webfont");
+@include font-face(Open-Sans-Regular, "../fonts/open_sans/opensans-regular-webfont");
+@include font-face(Roboto-Condensed-Light, "../fonts/roboto-condensed/robotocondensed-light-webfont");
+@include font-face(Roboto-Condensed-Regular, "../fonts/roboto-condensed/robotocondensed-regular-webfont");
+
+$mobileSmallBreakpoint: 540px;
+$mobileLargeBreakpoint: 767px;
+$tabletBreakpoint: 1024px;
+$desktopSmallBreakpoint: 1439px;
+
+$deepNavy: rgb(12, 26, 48);
+$navyHighlight: rgb(27, 50, 87);
+$cream: rgb(255, 248, 233);
+$darkRed:rgb(153, 51, 51);
+$ochre: rgb(179, 134, 0);
+
+@mixin responsiveBreakpoints($deviceSize) {
+    @if $deviceSize == mobileSmall {
+      @media only screen and (max-width: $mobileSmallBreakpoint) { @content; }
+    }
+    @if $deviceSize == mobileLarge {
+      @media only screen and (min-width: $mobileSmallBreakpoint + 1) and (max-width: $mobileLargeBreakpoint) { @content; }
+    }
+    @else if $deviceSize == tablet {
+      @media only screen and (min-width: $mobileLargeBreakpoint + 1) and (max-width: $tabletBreakpoint) { @content; }
+    }
+    @else if $deviceSize == desktopSmall {
+      @media only screen and (min-width: $tabletBreakpoint + 1) and (max-width: $desktopSmallBreakpoint) { @content; }
+    }
+    @else if $deviceSize == desktopLarge {
+      @media only screen and (min-width: $desktopSmallBreakpoint + 1) { @content; }
+    }
+  };
+
+  // @include responsiveBreakpoints(mobileSmall) {
+  // }
+  // @include responsiveBreakpoints(mobileLarge) {
+  // }
+  // @include responsiveBreakpoints(tablet) {
+  // }
+  // @include responsiveBreakpoints(desktopSmall) {
+  // }
+  // @include responsiveBreakpoints(desktopLarge) {
+  // }
+
+  body {
+      background-color: $cream;
+  }
+
+
+  .header{
+    position:fixed;
+    width:100%;
+    top:0px;
+    left:0px;
+    z-index: 100000;
+    background-color: $deepNavy;
+      @include responsiveBreakpoints(mobileSmall) {
+        height: 50px;
+      }
+      @include responsiveBreakpoints(mobileLarge) {
+       height: 60px;
+      }
+      @include responsiveBreakpoints(tablet) {
+        height: 70px;
+      }
+      @include responsiveBreakpoints(desktopSmall) {
+        height: 87px;
+      }
+      @include responsiveBreakpoints(desktopLarge) {
+        height: 87px;
+      }
+    }
+
+    .name {
+        position: relative;
+        font-family: 'Sans-Culottes';
+        color: $darkRed;
+
+        transition: all 25ms ease;
+
+        @include responsiveBreakpoints(mobileSmall) {
+            top: 7px;
+            left: 20px;
+            font-size:2em;
+            text-shadow: 1px 1px rgb(255,255,255);
+          }
+          @include responsiveBreakpoints(mobileLarge) {
+              top: 4px;
+              left: 25px;
+            font-size: 3em;
+            text-shadow: 1px 1px rgb(255,255,255);
+          }
+          @include responsiveBreakpoints(tablet) {
+              top: 5px;
+              left: 3.5%;
+            font-size: 2.25em;
+            text-shadow: 1.5px 1.5px rgb(255,255,255);
+          }
+          @include responsiveBreakpoints(desktopSmall) {
+              top: 6px;
+              left: 2.5%;
+            font-size: 3em;
+            text-shadow: 2px 2px rgb(255,255,255);
+          }
+          @include responsiveBreakpoints(desktopLarge) {
+              top: 6px;
+              left: 2.5%;
+            font-size: 3em;
+            text-shadow: 2px 2px rgb(255,255,255);
+          }
+    }
+
+    .business {
+      position: absolute;
+      font-family: 'Sans-Culottes';
+      color: $darkRed;
+
+      text-align-last: justify;
+      text-justify: inter-character;
+
+      @include responsiveBreakpoints(mobileSmall) {
+        display: none;
+      }
+      @include responsiveBreakpoints(mobileLarge) {
+          display: none;
+      }
+      @include responsiveBreakpoints(tablet) {
+        font-size: 16px;
+        line-height: 25px;
+        text-shadow: none;
+        width: 146.333px;
+      }
+      @include responsiveBreakpoints(desktopSmall) {
+          font-size: 20px;
+          line-height: 30px;
+        text-shadow: none;
+        width: 195.117px;
+      }
+      @include responsiveBreakpoints(desktopLarge) {
+          line-height: 30px;
+          font-size: 20px;
+        text-shadow: none;
+          width: 195.117px;
+      }
+  }
+
+    // .business {
+    //     position: relative;
+    //     font-family: 'Sans-Culottes';
+    //     color: $darkRed;
+    //     float: left;
+
+    //     text-align-last: justify;
+    //     text-justify: inter-character;
+
+    //     margin-left: 15px;
+
+    //     @include responsiveBreakpoints(mobileSmall) {
+    //       display: none;
+    //     }
+    //     @include responsiveBreakpoints(mobileLarge) {
+    //         display: none;
+    //     }
+    //     @include responsiveBreakpoints(tablet) {
+    //         top: 8px;
+    //         left: 9%;
+    //       font-size: 1.5em;
+    //       text-shadow: .75px .75px rgb(255,255,255);
+    //     }
+    //     @include responsiveBreakpoints(desktopSmall) {
+    //         top: 6px;
+    //         left: 2.5%;
+    //       font-size: 2em;
+    //       text-shadow: 1px 1px rgb(255,255,255);
+    //     }
+    //     @include responsiveBreakpoints(desktopLarge) {
+    //         top: 10px;
+    //         left: 2.5%;
+    //       font-size: 1.65em;
+    //       line-height: 32px;
+    //       text-shadow: 1px 1px rgb(255,255,255);
+
+    //       width: 120.83px;
+    //     }
+    // }
+
+    .logo:hover {
+      cursor: pointer;
+      .name {
+  @include responsiveBreakpoints(mobileSmall) {
+    text-shadow: 2px 2px rgb(255,255,255);
+  }
+  @include responsiveBreakpoints(mobileLarge) {
+    text-shadow: 2px 2px rgb(255,255,255);
+  }
+  @include responsiveBreakpoints(tablet) {
+    text-shadow: 3px 3px rgb(255,255,255);
+  }
+  @include responsiveBreakpoints(desktopSmall) {
+    text-shadow: 4px 4px rgb(255,255,255);
+  }
+  @include responsiveBreakpoints(desktopLarge) {
+    text-shadow: 4px 4px rgb(255,255,255);
+  }
+    }
+    .business {
+      @include responsiveBreakpoints(mobileSmall) {
+        text-shadow: .5px .5px rgb(255,255,255);
+      }
+      @include responsiveBreakpoints(mobileLarge) {
+        text-shadow: .5px .5px rgb(255,255,255);
+      }
+      @include responsiveBreakpoints(tablet) {
+        text-shadow: .75px .75px rgb(255,255,255);
+      }
+      @include responsiveBreakpoints(desktopSmall) {
+        text-shadow: 1px 1px rgb(255,255,255);
+      }
+      @include responsiveBreakpoints(desktopLarge) {
+        text-shadow: 1px 1px rgb(255,255,255);
+      }
+    }}
+
+    .container {
+      
+      margin-left: auto;
+      margin-right: auto;
+       @include responsiveBreakpoints(mobileSmall) {
+         padding-top: 100px;
+        width: 87.5%
+      }
+      @include responsiveBreakpoints(mobileLarge) {
+        padding-top: 110px;
+       width: 87.5%
+      }
+      @include responsiveBreakpoints(tablet) {
+        padding-top: 125px;
+        width: 93%
+      }
+      @include responsiveBreakpoints(desktopSmall) {
+        padding-top: 130px;
+        width: 95%
+      }
+      @include responsiveBreakpoints(desktopLarge) {
+        padding-top: 130px;
+        width: 95%
+      }
+    }
+
+    h1 {
+      font-family: 'Sans-Culottes';
+      color: $darkRed;
+       @include responsiveBreakpoints(mobileSmall) {
+         font-size: 32px;
+      }
+      @include responsiveBreakpoints(mobileLarge) {
+        font-size: 32px;
+      }
+      @include responsiveBreakpoints(tablet) {
+        font-size: 36px;
+      }
+      @include responsiveBreakpoints(desktopSmall) {
+        font-size: 40px;
+      }
+      @include responsiveBreakpoints(desktopLarge) {
+        font-size: 40px;
+      }
+    }
+
+    h3 {
+      font-family: 'Roboto-Condensed-Light';
+      color: $ochre;
+
+      @include responsiveBreakpoints(mobileSmall) {
+        font-size: 1em;
+      }
+      @include responsiveBreakpoints(mobileLarge) {
+        font-size: 1em;
+      }
+      @include responsiveBreakpoints(tablet) {
+        font-size: 1.125em;
+      }
+      @include responsiveBreakpoints(desktopSmall) {
+        font-size: 1.25em;
+        max-width: 725px;
+      }
+      @include responsiveBreakpoints(desktopLarge) {
+        font-size: 1.25em;
+        max-width: 750px;
+      }
+    }
+
+    canvas { width: 100%; height: 100%; max-width: 500px;}
+
+
+    .builder {
+      position: relative;
+      width: 95%;
+      height: 60vh;
+
+      margin-left: auto;
+      margin-right: auto;
+
+      max-width: 1100px;
+
+      background-color: white;
+
+      box-shadow: 0px 0px 18px #888888;
+
+      overflow: hidden;
+
+      @include responsiveBreakpoints(mobileSmall) {
+        margin-top: 50px;
+      }
+      @include responsiveBreakpoints(mobileLarge) {
+        margin-top: 50px;
+      }
+      @include responsiveBreakpoints(tablet) {
+        margin-top: 50px;
+      }
+      @include responsiveBreakpoints(desktopSmall) {
+        margin-top: 50px;
+
+      }
+      @include responsiveBreakpoints(desktopLarge) {
+        margin-top: 50px;
+      }
+    }
+
+    .bread {
+      position: absolute;
+      display: block;
+      z-index: 1;
+      width: 100%;
+
+      height:110px;
+      bottom: -120px;
+      clip-path: polygon(0% 20%, 0 20%, 2% 0, 18% 0, 20% 20%, 100% 20%, 100% 100%, 0 100%);
+      background-color: $deepNavy;
+
+      transition: all 0.5s ease;
+
+      padding-top: 40px;
+      color: white;
+      font-family: 'Roboto-Condensed-Regular';
+    }
+
+    .label {
+      color: white;
+      font-family: 'Sans-Culottes';
+      text-align: center;
+      padding-top: 5px;
+
+      @include responsiveBreakpoints(mobileSmall) {
+        font-size: .8em;
+      }
+      @include responsiveBreakpoints(mobileLarge) {
+        font-size: .9em;
+      }
+      @include responsiveBreakpoints(tablet) {
+        font-size: 1em;
+      }
+      @include responsiveBreakpoints(desktopSmall) {
+        font-size: 1.125em;
+      }
+     @include responsiveBreakpoints(desktopLarge) {
+       font-size: 1.125em;
+      }
+    }
+
+    .toggleBread {
+      position: absolute;
+      top: 0px;
+      height: 30px;
+      width: 20%;
+      background-color: $deepNavy;
+    }
+
+    .meat {
+
+      position: absolute;
+      display: block;
+      z-index: 2;
+      width: 100%;
+
+      height:150px;
+      bottom: -120px;
+      clip-path: polygon(0% 20%, 20% 20%, 22% 0, 38% 0, 40% 20%, 100% 20%, 100% 100%, 0 100%);
+      background-color: $navyHighlight;
+
+      transition: all 0.5s ease;
+
+      color: white;
+      font-family: 'Roboto-Condensed-Regular';
+    }
+
+     .toggleMeat {
+      position: absolute;
+      top: 0px;
+      left: 20%;
+      height: 30px;
+      width: 20%;
+      background-color: $navyHighlight;
+    }
+    .cheese {
+
+      position: absolute;
+      display: block;
+      z-index: 3;
+      width: 100%;
+
+      height:150px;
+     bottom: -120px;
+      clip-path: polygon(0% 20%, 40% 20%, 42% 0, 58% 0, 60% 20%, 100% 20%, 100% 100%, 0 100%);
+      background-color: $deepNavy;
+
+      transition: all 0.5s ease;
+
+      color: white;
+      font-family: 'Roboto-Condensed-Regular';
+
+    }
+
+     .toggleCheese {
+      position: absolute;
+      top: 0px;
+      left: 40%;
+      height: 30px;
+      width: 20%;
+      background-color: $deepNavy;
+    }
+
+    .veg {
+
+      position: absolute;
+      display: block;
+      z-index: 4;
+      width: 100%;
+
+      height:150px;
+      bottom: -120px;
+      clip-path: polygon(0% 20%, 60% 20%, 62% 0, 78% 0, 80% 20%, 100% 20%, 100% 100%, 0 100%);
+      background-color: $navyHighlight;
+
+      transition: all 0.5s ease;
+
+      color: white;
+      font-family: 'Roboto-Condensed-Regular';
+
+    }
+
+     .toggleVeg {
+      position: absolute;
+      top: 0px;
+      left: 60%;
+      height: 30px;
+      width: 20%;
+      background-color: $navyHighlight;
+    }
+
+    .extras {
+
+      position: absolute;
+      display: block;
+      z-index: 5;
+      width: 100%;
+
+      height: 150px;
+      bottom: -120px;
+      clip-path: polygon(0% 20%, 80% 20%, 82% 0, 98% 0, 100% 20%, 100% 20%, 100% 100%, 0 100%);
+      background-color: $deepNavy;
+
+      transition: all 0.5s ease;
+
+      color: white;
+      font-family: 'Roboto-Condensed-Regular';
+
+    }
+
+     .toggleExtras {
+      position: absolute;
+      top: 0px;
+      left: 80%;
+      height: 30px;
+      width: 20%;
+      background-color: $deepNavy;
+    }
+
+    .options {
+
+      label {
+         @include responsiveBreakpoints(mobileSmall) {
+           font-size: 12px;
+  }
+  @include responsiveBreakpoints(mobileLarge) {
+    font-size: 14px;
+  }
+  @include responsiveBreakpoints(tablet) {
+
+    font-size: 16px;
+  }
+  @include responsiveBreakpoints(desktopSmall) {
+    font-size: 18px;
+  }
+  @include responsiveBreakpoints(desktopLarge) {
+    font-size: 20px;
+  }
+      }
+    }

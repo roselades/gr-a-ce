@@ -1,0 +1,585 @@
+@font-face {
+  font-family: "Sans-Culottes";
+  src: url("../fonts/sans-culottes/sansculottes-webfont.eot?") format("eot"), url("../fonts/sans-culottes/sansculottes-webfont.woff2") format("woff2"), url("../fonts/sans-culottes/sansculottes-webfont.woff") format("woff"), url("../fonts/sans-culottes/sansculottes-webfont.ttf") format("truetype"), url("../fonts/sans-culottes/sansculottes-webfont.svg#Sans-Culottes") format("svg");
+}
+
+@font-face {
+  font-family: "Open-Sans-Light";
+  src: url("../fonts/open_sans/opensans-light-webfont.eot?") format("eot"), url("../fonts/open_sans/opensans-light-webfont.woff2") format("woff2"), url("../fonts/open_sans/opensans-light-webfont.woff") format("woff"), url("../fonts/open_sans/opensans-light-webfont.ttf") format("truetype"), url("../fonts/open_sans/opensans-light-webfont.svg#Open-Sans-Light") format("svg");
+}
+
+@font-face {
+  font-family: "Open-Sans-Regular";
+  src: url("../fonts/open_sans/opensans-regular-webfont.eot?") format("eot"), url("../fonts/open_sans/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/open_sans/opensans-regular-webfont.woff") format("woff"), url("../fonts/open_sans/opensans-regular-webfont.ttf") format("truetype"), url("../fonts/open_sans/opensans-regular-webfont.svg#Open-Sans-Regular") format("svg");
+}
+
+@font-face {
+  font-family: "Roboto-Condensed-Light";
+  src: url("../fonts/roboto-condensed/robotocondensed-light-webfont.eot?") format("eot"), url("../fonts/roboto-condensed/robotocondensed-light-webfont.woff2") format("woff2"), url("../fonts/roboto-condensed/robotocondensed-light-webfont.woff") format("woff"), url("../fonts/roboto-condensed/robotocondensed-light-webfont.ttf") format("truetype"), url("../fonts/roboto-condensed/robotocondensed-light-webfont.svg#Roboto-Condensed-Light") format("svg");
+}
+
+@font-face {
+  font-family: "Roboto-Condensed-Regular";
+  src: url("../fonts/roboto-condensed/robotocondensed-regular-webfont.eot?") format("eot"), url("../fonts/roboto-condensed/robotocondensed-regular-webfont.woff2") format("woff2"), url("../fonts/roboto-condensed/robotocondensed-regular-webfont.woff") format("woff"), url("../fonts/roboto-condensed/robotocondensed-regular-webfont.ttf") format("truetype"), url("../fonts/roboto-condensed/robotocondensed-regular-webfont.svg#Roboto-Condensed-Regular") format("svg");
+}
+
+body {
+  background-color: #fff8e9;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 100000;
+  background-color: #0c1a30;
+}
+
+@media only screen and (max-width: 540px) {
+  .header {
+    height: 50px;
+  }
+}
+
+@media only screen and (min-width: 541px) and (max-width: 767px) {
+  .header {
+    height: 60px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .header {
+    height: 70px;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1439px) {
+  .header {
+    height: 87px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .header {
+    height: 87px;
+  }
+}
+
+.name {
+  position: relative;
+  font-family: 'Sans-Culottes';
+  color: #993333;
+  -webkit-transition: all 25ms ease;
+  transition: all 25ms ease;
+}
+
+@media only screen and (max-width: 540px) {
+  .name {
+    top: 7px;
+    left: 20px;
+    font-size: 2em;
+    text-shadow: 1px 1px white;
+  }
+}
+
+@media only screen and (min-width: 541px) and (max-width: 767px) {
+  .name {
+    top: 4px;
+    left: 25px;
+    font-size: 3em;
+    text-shadow: 1px 1px white;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .name {
+    top: 5px;
+    left: 3.5%;
+    font-size: 2.25em;
+    text-shadow: 1.5px 1.5px white;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1439px) {
+  .name {
+    top: 6px;
+    left: 2.5%;
+    font-size: 3em;
+    text-shadow: 2px 2px white;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .name {
+    top: 6px;
+    left: 2.5%;
+    font-size: 3em;
+    text-shadow: 2px 2px white;
+  }
+}
+
+.business {
+  position: absolute;
+  font-family: 'Sans-Culottes';
+  color: #993333;
+  text-align-last: justify;
+  text-justify: inter-character;
+}
+
+@media only screen and (max-width: 540px) {
+  .business {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 541px) and (max-width: 767px) {
+  .business {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .business {
+    font-size: 16px;
+    line-height: 25px;
+    text-shadow: none;
+    width: 146.333px;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1439px) {
+  .business {
+    font-size: 20px;
+    line-height: 30px;
+    text-shadow: none;
+    width: 195.117px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .business {
+    line-height: 30px;
+    font-size: 20px;
+    text-shadow: none;
+    width: 195.117px;
+  }
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 540px) {
+  .logo:hover .name {
+    text-shadow: 2px 2px white;
+  }
+}
+
+@media only screen and (min-width: 541px) and (max-width: 767px) {
+  .logo:hover .name {
+    text-shadow: 2px 2px white;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .logo:hover .name {
+    text-shadow: 3px 3px white;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1439px) {
+  .logo:hover .name {
+    text-shadow: 4px 4px white;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .logo:hover .name {
+    text-shadow: 4px 4px white;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .logo:hover .business {
+    text-shadow: 0.5px 0.5px white;
+  }
+}
+
+@media only screen and (min-width: 541px) and (max-width: 767px) {
+  .logo:hover .business {
+    text-shadow: 0.5px 0.5px white;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .logo:hover .business {
+    text-shadow: 0.75px 0.75px white;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1439px) {
+  .logo:hover .business {
+    text-shadow: 1px 1px white;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .logo:hover .business {
+    text-shadow: 1px 1px white;
+  }
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 540px) {
+  .container {
+    padding-top: 100px;
+    width: 87.5%;
+  }
+}
+
+@media only screen and (min-width: 541px) and (max-width: 767px) {
+  .container {
+    padding-top: 110px;
+    width: 87.5%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    padding-top: 125px;
+    width: 93%;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1439px) {
+  .container {
+    padding-top: 130px;
+    width: 95%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    padding-top: 130px;
+    width: 95%;
+  }
+}
+
+h1 {
+  font-family: 'Sans-Culottes';
+  color: #993333;
+}
+
+@media only screen and (max-width: 540px) {
+  h1 {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (min-width: 541px) and (max-width: 767px) {
+  h1 {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  h1 {
+    font-size: 36px;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1439px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+h3 {
+  font-family: 'Roboto-Condensed-Light';
+  color: #b38600;
+}
+
+@media only screen and (max-width: 540px) {
+  h3 {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 541px) and (max-width: 767px) {
+  h3 {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  h3 {
+    font-size: 1.125em;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1439px) {
+  h3 {
+    font-size: 1.25em;
+    max-width: 725px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  h3 {
+    font-size: 1.25em;
+    max-width: 750px;
+  }
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+}
+
+.builder {
+  position: relative;
+  width: 95%;
+  height: 60vh;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1100px;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 18px #888888;
+          box-shadow: 0px 0px 18px #888888;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 540px) {
+  .builder {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (min-width: 541px) and (max-width: 767px) {
+  .builder {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .builder {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1439px) {
+  .builder {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .builder {
+    margin-top: 50px;
+  }
+}
+
+.bread {
+  position: absolute;
+  display: block;
+  z-index: 1;
+  width: 100%;
+  height: 110px;
+  bottom: -120px;
+  -webkit-clip-path: polygon(0% 20%, 0 20%, 2% 0, 18% 0, 20% 20%, 100% 20%, 100% 100%, 0 100%);
+          clip-path: polygon(0% 20%, 0 20%, 2% 0, 18% 0, 20% 20%, 100% 20%, 100% 100%, 0 100%);
+  background-color: #0c1a30;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  padding-top: 40px;
+  color: white;
+  font-family: 'Roboto-Condensed-Regular';
+}
+
+.label {
+  color: white;
+  font-family: 'Sans-Culottes';
+  text-align: center;
+  padding-top: 5px;
+}
+
+@media only screen and (max-width: 540px) {
+  .label {
+    font-size: .8em;
+  }
+}
+
+@media only screen and (min-width: 541px) and (max-width: 767px) {
+  .label {
+    font-size: .9em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .label {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1439px) {
+  .label {
+    font-size: 1.125em;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .label {
+    font-size: 1.125em;
+  }
+}
+
+.toggleBread {
+  position: absolute;
+  top: 0px;
+  height: 30px;
+  width: 20%;
+  background-color: #0c1a30;
+}
+
+.meat {
+  position: absolute;
+  display: block;
+  z-index: 2;
+  width: 100%;
+  height: 150px;
+  bottom: -120px;
+  -webkit-clip-path: polygon(0% 20%, 20% 20%, 22% 0, 38% 0, 40% 20%, 100% 20%, 100% 100%, 0 100%);
+          clip-path: polygon(0% 20%, 20% 20%, 22% 0, 38% 0, 40% 20%, 100% 20%, 100% 100%, 0 100%);
+  background-color: #1b3257;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  color: white;
+  font-family: 'Roboto-Condensed-Regular';
+}
+
+.toggleMeat {
+  position: absolute;
+  top: 0px;
+  left: 20%;
+  height: 30px;
+  width: 20%;
+  background-color: #1b3257;
+}
+
+.cheese {
+  position: absolute;
+  display: block;
+  z-index: 3;
+  width: 100%;
+  height: 150px;
+  bottom: -120px;
+  -webkit-clip-path: polygon(0% 20%, 40% 20%, 42% 0, 58% 0, 60% 20%, 100% 20%, 100% 100%, 0 100%);
+          clip-path: polygon(0% 20%, 40% 20%, 42% 0, 58% 0, 60% 20%, 100% 20%, 100% 100%, 0 100%);
+  background-color: #0c1a30;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  color: white;
+  font-family: 'Roboto-Condensed-Regular';
+}
+
+.toggleCheese {
+  position: absolute;
+  top: 0px;
+  left: 40%;
+  height: 30px;
+  width: 20%;
+  background-color: #0c1a30;
+}
+
+.veg {
+  position: absolute;
+  display: block;
+  z-index: 4;
+  width: 100%;
+  height: 150px;
+  bottom: -120px;
+  -webkit-clip-path: polygon(0% 20%, 60% 20%, 62% 0, 78% 0, 80% 20%, 100% 20%, 100% 100%, 0 100%);
+          clip-path: polygon(0% 20%, 60% 20%, 62% 0, 78% 0, 80% 20%, 100% 20%, 100% 100%, 0 100%);
+  background-color: #1b3257;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  color: white;
+  font-family: 'Roboto-Condensed-Regular';
+}
+
+.toggleVeg {
+  position: absolute;
+  top: 0px;
+  left: 60%;
+  height: 30px;
+  width: 20%;
+  background-color: #1b3257;
+}
+
+.extras {
+  position: absolute;
+  display: block;
+  z-index: 5;
+  width: 100%;
+  height: 150px;
+  bottom: -120px;
+  -webkit-clip-path: polygon(0% 20%, 80% 20%, 82% 0, 98% 0, 100% 20%, 100% 20%, 100% 100%, 0 100%);
+          clip-path: polygon(0% 20%, 80% 20%, 82% 0, 98% 0, 100% 20%, 100% 20%, 100% 100%, 0 100%);
+  background-color: #0c1a30;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  color: white;
+  font-family: 'Roboto-Condensed-Regular';
+}
+
+.toggleExtras {
+  position: absolute;
+  top: 0px;
+  left: 80%;
+  height: 30px;
+  width: 20%;
+  background-color: #0c1a30;
+}
+
+@media only screen and (max-width: 540px) {
+  .options label {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 541px) and (max-width: 767px) {
+  .options label {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .options label {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1439px) {
+  .options label {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .options label {
+    font-size: 20px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
